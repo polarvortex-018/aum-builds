@@ -1,460 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aum Builds — AI-Assisted Architecture</title>
-  <meta name="description" content="Where ancient building traditions meet generative AI. Architecture that respects the land, performs for the climate, and delivers at unmatched speed and value." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Aum_buIlds — AI-Assisted Environmental Architecture</title>
+<meta name="description" content="Where environmental intelligence meets the wisdom of place. AI-assisted architecture that adapts, performs, and endures."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- NAV -->
-  <nav id="main-nav">
-    <a href="#" class="nav-logo"><span class="hi">A</span>um_bu<span class="hi">I</span>lds</a>
-    <ul class="nav-links">
-      <li><a href="#intelligence">Services</a></li>
-      <li><a href="#work">Spatial Stories</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#cta">Contact Us</a></li>
-    </ul>
-    <button class="nav-cta" id="nav-cta-btn">Begin a Project</button>
-    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+<!-- ═══ NAV ═══ -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">
+    <svg class="nav-logo-img" height="38" viewBox="0 0 55 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="2" width="51" height="61" rx="3" stroke="#0B1628" stroke-width="3" fill="none"/>
+      <ellipse cx="29" cy="32" rx="17" ry="19" stroke="#0B1628" stroke-width="3" fill="none"/>
+      <line x1="19" y1="27" x2="33" y2="27" stroke="#C8A96E" stroke-width="3" stroke-linecap="round"/>
+      <line x1="19" y1="33.5" x2="36" y2="33.5" stroke="#C8A96E" stroke-width="3" stroke-linecap="round"/>
+      <path d="M20 41 Q28.5 48 38 41" stroke="#C8A96E" stroke-width="3" stroke-linecap="round" fill="none"/>
+    </svg>
+    <span class="nav-logo-text"><span class="ai-a">A</span>um_bu<span class="ai-i">I</span>lds</span>
+  </a>
+  <div class="nav-tubelight">
+    <div class="nav-tubelight-container">
+      <a href="#site-intelligence" class="nav-tubelight-item active">
+        <span class="nav-tubelight-text">Intelligence</span>
+        <span class="nav-tubelight-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </span>
+      </a>
+      <a href="#performance" class="nav-tubelight-item">
+        <span class="nav-tubelight-text">Performance</span>
+        <span class="nav-tubelight-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+          </svg>
+        </span>
+      </a>
+      <a href="#generative" class="nav-tubelight-item">
+        <span class="nav-tubelight-text">Generative</span>
+        <span class="nav-tubelight-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="9"/>
+            <rect x="14" y="3" width="7" height="5"/>
+            <rect x="14" y="12" width="7" height="9"/>
+            <rect x="3" y="16" width="7" height="5"/>
+          </svg>
+        </span>
+      </a>
+      <a href="#materials" class="nav-tubelight-item">
+        <span class="nav-tubelight-text">Materials</span>
+        <span class="nav-tubelight-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </span>
+      </a>
+      <a href="#about" class="nav-tubelight-item">
+        <span class="nav-tubelight-text">About</span>
+        <span class="nav-tubelight-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+          </svg>
+        </span>
+      </a>
+      
+      <!-- Sliding active lamp -->
+      <div class="nav-tubelight-lamp" id="nav-tubelight-lamp">
+        <div class="nav-tubelight-line">
+          <div class="nav-tubelight-glow-1"></div>
+          <div class="nav-tubelight-glow-2"></div>
+          <div class="nav-tubelight-glow-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="nav-cta" onclick="openModal()">Begin a Project</button>
+</nav>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobile-menu">
-    <button class="mobile-menu-close" id="mobile-menu-close">✕</button>
-    <ul>
-      <li><a href="#intelligence" class="mobile-link">Services</a></li>
-      <li><a href="#work" class="mobile-link">Spatial Stories</a></li>
-      <li><a href="#about" class="mobile-link">About Us</a></li>
-      <li><a href="#cta" class="mobile-link">Contact Us</a></li>
-      <li><a href="#" class="mobile-link mobile-cta" id="mobile-cta-btn">Begin a Project</a></li>
-    </ul>
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Listening to the Land · AI-Assisted · Performance-Driven</p>
+    <h1 class="hero-title">Architecture<br/>That <em>Breathes</em></h1>
+    <p class="hero-sub">Where environmental intelligence meets the wisdom of place. AI-assisted architecture that adapts, performs, and endures.</p>
+    <div class="hero-btns">
+      <button class="btn-dark" onclick="openModal()">Begin a Project</button>
+      <a href="#site-intelligence" class="btn-ghost">Our Intelligence</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
+  <div class="usp-strip">
+    <div class="usp-item"><div class="usp-num">4×</div><div class="usp-label">Faster Design Delivery</div></div>
+    <div class="usp-item"><div class="usp-num">30%</div><div class="usp-label">Cost Efficiency</div></div>
+    <div class="usp-item"><div class="usp-num">100%</div><div class="usp-label">Climate-Responsive</div></div>
+  </div>
+</section>
+
+<!-- ═══ SITE INTELLIGENCE ═══ -->
+<section id="site-intelligence" style="padding:0;">
+  <div class="si-header reveal">
+    <span class="s-label">— Site Intelligence</span>
+    <h2 class="s-title">Every site has a story.<br/><em>We learn to listen.</em></h2>
+    <p class="s-body">Before a single line is drawn, our AI reads the land. Sun. Wind. Water. Soil. Ecology. The site becomes the design brief.</p>
+  </div>
+  <div class="si-world">
+    <canvas class="si-canvas" id="si-canvas"></canvas>
+    <div class="si-overlay-labels" id="si-labels">
+      <div class="si-label" id="lbl-sun" style="top:12%;left:65%;">☀ Cooler interiors through intelligent shading</div>
+      <div class="si-label" id="lbl-wind" style="top:35%;left:8%;">↺ Natural airflow — no mechanical cooling required</div>
+      <div class="si-label" id="lbl-water" style="top:65%;left:55%;">∿ Rainwater harvesting pathways</div>
+      <div class="si-label" id="lbl-ecol" style="top:78%;left:14%;">⬡ Microclimate formed by site vegetation</div>
+    </div>
+    <div class="si-modes" id="si-modes">
+      <button class="si-mode-btn active" onclick="setSIMode('sun',this)">Solar Analysis</button>
+      <button class="si-mode-btn" onclick="setSIMode('wind',this)">Wind Mapping</button>
+      <button class="si-mode-btn" onclick="setSIMode('water',this)">Hydrology</button>
+      <button class="si-mode-btn" onclick="setSIMode('ecology',this)">Ecology</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PERFORMANCE DESIGN ═══ -->
+<section id="performance" style="padding:0;">
+  <div class="perf-header reveal">
+    <span class="s-label">— Performance Design</span>
+    <h2 class="s-title">Buildings that perform<br/>before they are <em>built.</em></h2>
+    <p class="s-body">Every design decision is tested, simulated, and proven. We engineer comfort, reduce dependence on energy, and design spaces that feel alive.</p>
+  </div>
+  <div class="perf-stage">
+    <canvas class="perf-canvas" id="perf-canvas"></canvas>
+    <div class="perf-caption" id="perf-caption">
+      <div class="perf-caption-title" id="perf-title">Cross Ventilation</div>
+      <div class="perf-caption-body" id="perf-body">Cooler interiors with natural airflow — no mechanical cooling required in the shoulder seasons.</div>
+    </div>
+    <div class="perf-modes">
+      <button class="perf-mode-btn active" onclick="setPerfMode('vent',this)">Airflow</button>
+      <button class="perf-mode-btn" onclick="setPerfMode('daylight',this)">Daylight</button>
+      <button class="perf-mode-btn" onclick="setPerfMode('thermal',this)">Thermal Mass</button>
+      <button class="perf-mode-btn" onclick="setPerfMode('shading',this)">Shading</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GENERATIVE DESIGN ═══ -->
+<section id="generative" style="padding:0;">
+  <div class="gen-header reveal">
+    <span class="s-label">— Generative Design</span>
+    <h2 class="s-title">Thousands of possibilities.<br/><em>One perfect form.</em></h2>
+    <p class="s-body">AI generates and tests hundreds of spatial configurations simultaneously — selecting the ones that breathe, perform, and endure. The result feels inevitable.</p>
+  </div>
+  <div class="gen-stage">
+    <canvas class="gen-canvas" id="gen-canvas"></canvas>
+    <div class="gen-phases" id="gen-phases">
+      <div class="gen-phase active" id="gp0">Generate Possibilities</div>
+      <div class="gen-phase" id="gp1">Test Performance</div>
+      <div class="gen-phase" id="gp2">Filter Inefficient Forms</div>
+      <div class="gen-phase" id="gp3">Optimise Daylight</div>
+      <div class="gen-phase" id="gp4">Refine for Climate</div>
+      <div class="gen-phase" id="gp5">The Intelligent Form Emerges</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MATERIAL INNOVATION ═══ -->
+<section id="materials" style="padding:0;">
+  <div class="mat-header reveal">
+    <span class="s-label">— Material Innovation</span>
+    <h2 class="s-title">Neo-vernacular intelligence.<br/><em>Ancient wisdom, evolved.</em></h2>
+    <p class="s-body">The most advanced building technologies on earth are the ones humans perfected over millennia — rammed earth, terracotta, stone, bamboo. We bring them into the present with precision.</p>
+  </div>
+  <div class="mat-showcase">
+    <div class="mat-card">
+      <canvas class="mat-card-canvas" id="mat-canvas-1"></canvas>
+      <div class="mat-card-info">
+        <div class="mat-card-tag">Thermal Intelligence</div>
+        <div class="mat-card-title">Rammed Earth Modern Villa</div>
+        <div class="mat-card-desc">Walls that store the cool of night and breathe through the heat of day. Indoor temperatures 8°C below outside — naturally.</div>
+      </div>
+    </div>
+    <div class="mat-card">
+      <canvas class="mat-card-canvas" id="mat-canvas-2"></canvas>
+      <div class="mat-card-info">
+        <div class="mat-card-tag">Passive Cooling System</div>
+        <div class="mat-card-title">Terracotta Cooling Architecture</div>
+        <div class="mat-card-desc">Terracotta's porosity creates evaporative cooling at the skin. A living, breathing façade that responds to humidity and temperature.</div>
+      </div>
+    </div>
+    <div class="mat-card">
+      <canvas class="mat-card-canvas" id="mat-canvas-3"></canvas>
+      <div class="mat-card-info">
+        <div class="mat-card-tag">Hybrid Structure</div>
+        <div class="mat-card-title">Bamboo + Lime Hybrid Retreat</div>
+        <div class="mat-card-desc">Bamboo's tensile intelligence with lime's breathable thermal skin. A structure that sequesters carbon while it shelters life.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT US ═══ -->
+<section id="about" style="padding:0;">
+  <div class="about-cinematic">
+    <canvas class="about-canvas" id="about-canvas"></canvas>
+    <div class="about-hero-text">
+      <h1>This is not a<br/>normal <em>architecture firm.</em></h1>
+      <p>We are building a new relationship between intelligence, nature, and architecture. One building at a time.</p>
+    </div>
+  </div>
+  <div class="about-team">
+    <div class="about-intro reveal">
+      <span class="s-label" style="text-align:center;">— Who We Are</span>
+      <h2 class="s-title" style="text-align:center;">Two minds.<br/><em>One direction.</em></h2>
+      <p class="s-body" style="max-width:560px;text-align:center;margin:0 auto;">Aum_buIlds is a young, future-forward practice that believes architecture must think before it is built. We combine environmental AI with deep design sensitivity to create spaces that perform — and endure.</p>
+    </div>
+
+    <div class="founder-grid">
+      <!-- POORVI -->
+      <div class="founder-card reveal">
+        <div class="founder-portrait">
+          <canvas class="founder-portrait-canvas" id="fc1"></canvas>
+          <div class="founder-portrait-overlay">
+            <div class="founder-role">Founder & Creative Director</div>
+            <div class="founder-name">Ar. Poorvi Dasari</div>
+            <div class="founder-title">AI-Assisted Environmental Architect</div>
+          </div>
+        </div>
+        <blockquote class="founder-quote">"The land already knows what the building should be. Our work is simply to listen carefully enough."</blockquote>
+        <p class="founder-bio">Poorvi founded Aum_buIlds on a conviction that architecture's most urgent task is learning to work with nature — not against it. Trained in architecture and environmental design, she built the practice around a single philosophical premise: every site already holds the intelligence for its building. The role of the architect is to surface it.<br/><br/>She integrates AI-assisted analysis with deep vernacular knowledge, bringing together computational environmental modelling and the spatial intuition shaped by India's rich building traditions. Her designs are simultaneously data-precise and emotionally resonant — buildings that feel as though they have always belonged to their land.<br/><br/>Poorvi leads creative direction, environmental strategy, and every project's design intelligence from first site reading to final form.</p>
+      </div>
+
+      <!-- NANDNI -->
+      <div class="founder-card reveal rd2">
+        <div class="founder-portrait">
+          <canvas class="founder-portrait-canvas" id="fc2"></canvas>
+          <div class="founder-portrait-overlay">
+            <div class="founder-role">Head of Design Operations</div>
+            <div class="founder-name">Nandni Padmakumar</div>
+            <div class="founder-title">Client Strategy & Design Intelligence Lead</div>
+          </div>
+        </div>
+        <blockquote class="founder-quote">"Great architecture lives in the relationship between the designer, the client, and the space they're trying to create together."</blockquote>
+        <p class="founder-bio">Nandni is the connective intelligence of Aum_buIlds — the person who translates a client's vision into a project that can actually be built, loved, and lived in. Her intuition for people and design makes her the bridge between Poorvi's environmental vision and the human reality of every project.<br/><br/>She leads the full client experience: from the first conversation and project brief through design coordination, stakeholder management, and delivery. Her approach is collaborative by nature and strategic by instinct — she understands that the best buildings emerge from genuine partnership between architect and inhabitant.<br/><br/>Nandni brings operational intelligence, design sensitivity, and the quiet clarity that keeps complex projects moving toward their most meaningful outcomes.</p>
+      </div>
+    </div>
   </div>
 
-  <!-- HERO -->
-  <section id="hero">
-    <canvas id="hero-canvas"></canvas>
-    <div class="hero-content">
-      <p class="hero-eyebrow">AI-Assisted Architecture · Vernacular Intelligence · Sustainable by Design</p>
-      <h1 class="hero-title">Building with<br /><em>Earth &amp; Intelligence</em></h1>
-      <p class="hero-sub">Where ancient building traditions meet generative AI. Architecture that respects the land, performs for the climate, and delivers at unmatched speed and value.</p>
-      <div class="hero-btns">
-        <button class="btn-primary" id="hero-cta-btn">Begin a Project</button>
-        <a href="#intelligence" class="btn-secondary">How We Work</a>
+  <!-- TEAM VISION -->
+  <div class="team-vision">
+    <h2 class="tv-title reveal">The future we are<br/><em>building toward.</em></h2>
+    <p class="tv-body reveal">Aum_buIlds exists at the intersection of environmental intelligence and human experience. We are building the systems, projects, and partnerships that will define what intelligent architecture looks like in the next decade — in India and globally.</p>
+    <div class="vision-pillars reveal">
+      <div class="vision-pillar">
+        <div class="vp-num">01 —</div>
+        <div class="vp-title">AI-Assisted Design</div>
+        <div class="vp-desc">Every design decision informed by environmental simulation, generative intelligence, and performance data — before the first wall is drawn.</div>
+      </div>
+      <div class="vision-pillar">
+        <div class="vp-num">02 —</div>
+        <div class="vp-title">Environmental Harmony</div>
+        <div class="vp-desc">Buildings that restore ecological balance. Net-zero energy. Regenerative materials. Architecture that gives back to the land that holds it.</div>
+      </div>
+      <div class="vision-pillar">
+        <div class="vp-num">03 —</div>
+        <div class="vp-title">Global Ambition</div>
+        <div class="vp-desc">Beginning in India. Expanding toward a globally relevant practice in intelligent environmental architecture — rooted in place, universally understood.</div>
       </div>
     </div>
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-    <div class="usp-strip">
-      <div class="usp-item">
-        <div class="usp-num">4×</div>
-        <div class="usp-label">Faster Design Speed</div>
-      </div>
-      <div class="usp-item">
-        <div class="usp-num">30%</div>
-        <div class="usp-label">Cost Efficiency</div>
-      </div>
-      <div class="usp-item">
-        <div class="usp-num">100%</div>
-        <div class="usp-label">Climate-Responsive</div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SERVICES / INTELLIGENCE -->
-  <section id="intelligence">
-    <div class="intel-header reveal">
-      <span class="section-label">— Our Services</span>
-      <h2 class="section-title">Three intelligences.<br /><em>One building.</em></h2>
-      <p class="section-body">Click any card to explore the science and method behind each pillar of our practice — from ECBC-compliant passive cooling to AI-driven material selection.</p>
-    </div>
-    <div class="intel-grid">
-      <div class="intel-card reveal reveal-delay-1" id="card-site">
-        <div class="intel-canvas-wrap">
-          <canvas class="intel-card-canvas" id="canvas-site"></canvas>
-          <div class="ai-scan-line"></div>
-        </div>
-        <div class="intel-card-body">
-          <p class="intel-card-tag">01 — Site Intelligence</p>
-          <h3 class="intel-card-title">AI-Powered Site &amp; Climate Analysis</h3>
-          <p class="intel-card-desc">Terrain, solar paths, wind corridors, flood zones and Vastu axes — all fed into AI before a single line is drawn. Your site's soul becomes the design brief.</p>
-          <span class="intel-card-cta">Explore how we do it →</span>
-        </div>
-      </div>
-      <div class="intel-card reveal reveal-delay-2" id="card-gen">
-        <div class="intel-canvas-wrap">
-          <canvas class="intel-card-canvas" id="canvas-gen"></canvas>
-          <div class="ai-scan-line" style="animation-delay:1s;"></div>
-        </div>
-        <div class="intel-card-body">
-          <p class="intel-card-tag">02 — Generative Design</p>
-          <h3 class="intel-card-title">100 Possibilities, One Perfect Form</h3>
-          <p class="intel-card-desc">AI generates hundreds of massing and spatial configurations simultaneously. We curate the one that resonates — with site, climate, client soul, and proportion.</p>
-          <span class="intel-card-cta">Explore how we do it →</span>
-        </div>
-      </div>
-      <div class="intel-card reveal reveal-delay-3" id="card-material">
-        <div class="intel-canvas-wrap">
-          <canvas class="intel-card-canvas" id="canvas-material"></canvas>
-          <div class="ai-scan-line" style="animation-delay:2s;"></div>
-        </div>
-        <div class="intel-card-body">
-          <p class="intel-card-tag">03 — Material Intelligence</p>
-          <h3 class="intel-card-title">Context-Driven Material Exploration</h3>
-          <p class="intel-card-desc">AI cross-references local material availability, embodied carbon, thermal performance, and regional vernacular to recommend materials rooted in place.</p>
-          <span class="intel-card-cta">Explore how we do it →</span>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- ═══ SPATIAL STORIES ═══ -->
+<section id="work">
+  <div class="work-header reveal">
+    <span class="s-label">— Spatial Stories</span>
+    <h2 class="s-title">Our completed <em>projects.</em></h2>
+    <p class="s-body" style="margin:0 auto;text-align:center;">Completed architectural and interior projects — documented in full detail on our portfolio Drive.</p><br/>
+    <a href="https://drive.google.com/drive/folders/1bhBNKak9B0dxlOwMA-Y7DW0XOSa903uQ?usp=drive_link" target="_blank" class="work-drive">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+      View Full Portfolio on Drive
+    </a>
+  </div>
+  <div class="work-placeholder reveal">
+    <h3>Portfolio gallery loading soon</h3>
+    <p>Our completed projects will appear here as a curated gallery. In the meantime, explore the full documentation on our Drive above.</p>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="about-grid reveal">
-      <div class="about-text">
-        <span class="section-label">— About Us</span>
-        <h2 class="section-title">We design from<br />the <em>earth up.</em></h2>
-        <p class="section-body">Aum Builds is a new-generation architecture studio combining AI-driven design tools with centuries of Indian vernacular building wisdom — to deliver faster, greener, more meaningful spaces.</p>
-        <div class="about-values">
-          <div class="about-value">
-            <span class="about-value-num">01</span>
-            <div>
-              <div class="about-value-title">Rooted in Tradition</div>
-              <p class="about-value-desc">We draw from India's rich heritage of climate-responsive design — courtyards, thick walls, deep overhangs — validated by millennia.</p>
-            </div>
-          </div>
-          <div class="about-value">
-            <span class="about-value-num">02</span>
-            <div>
-              <div class="about-value-title">Powered by Intelligence</div>
-              <p class="about-value-desc">AI handles the computational heavy lifting so our architects can focus entirely on quality of space and human experience.</p>
-            </div>
-          </div>
-          <div class="about-value">
-            <span class="about-value-num">03</span>
-            <div>
-              <div class="about-value-title">Sustainable by Default</div>
-              <p class="about-value-desc">Every project targets GRIHA 4-star and Super ECBC performance — not as a premium add-on, but as our baseline standard.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="about-img-placeholder">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-          <rect x="8" y="28" width="48" height="28" stroke="#1A6BFF" stroke-width="1.5"/>
-          <path d="M8 28L32 10L56 28" stroke="#1A6BFF" stroke-width="1.5"/>
-          <rect x="24" y="40" width="16" height="16" stroke="#1A6BFF" stroke-width="1.2"/>
-        </svg>
-        <p>Team photo / studio image<br />to be added here</p>
-      </div>
-    </div>
-  </section>
+<!-- ═══ CLIENT STORIES ═══ -->
+<section id="testimonials">
+  <div class="reveal" style="text-align:center;">
+    <span class="s-label">— Client Experiences</span>
+    <h2 class="s-title">Stories from the people<br/>we've <em>built for.</em></h2>
+    <p class="s-body" style="margin:0 auto;text-align:center;">We believe the best testament is the people who live in our spaces. Watch their experiences — unscripted, in their homes.</p>
+  </div>
+  <div class="test-grid">
+    <div class="test-card reveal rd1"><div class="video-wrap"><canvas id="vc1"></canvas><div class="play-btn-wrap"><div class="play-btn"></div></div></div><div class="test-body"><div class="test-name">[ Client Name ]</div><div class="test-proj">Project · Location</div><p class="test-note">Upload a 60–90 second client video to replace this placeholder.</p></div></div>
+    <div class="test-card reveal rd2"><div class="video-wrap"><canvas id="vc2"></canvas><div class="play-btn-wrap"><div class="play-btn"></div></div></div><div class="test-body"><div class="test-name">[ Client Name ]</div><div class="test-proj">Project · Location</div><p class="test-note">Upload a 60–90 second client video to replace this placeholder.</p></div></div>
+    <div class="test-card reveal rd3"><div class="video-wrap"><canvas id="vc3"></canvas><div class="play-btn-wrap"><div class="play-btn"></div></div></div><div class="test-body"><div class="test-name">[ Client Name ]</div><div class="test-proj">Project · Location</div><p class="test-note">Upload a 60–90 second client video to replace this placeholder.</p></div></div>
+  </div>
+</section>
 
-  <!-- OUR WORK / SPATIAL STORIES -->
-  <section id="work">
-    <div class="work-header reveal">
-      <span class="section-label">— Spatial Stories</span>
-      <h2 class="section-title">Our completed<br /><em>projects.</em></h2>
-      <p class="section-body" style="margin:0 auto;">Browse our portfolio of completed interior and architectural projects. All documentation, drawings and photography are hosted on our Drive.</p>
-      <br />
-      <!-- REPLACE # WITH YOUR GOOGLE DRIVE SHARED FOLDER LINK -->
-      <a href="#" target="_blank" rel="noopener noreferrer" class="work-drive-btn" id="portfolio-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
-        </svg>
-        View Full Portfolio on Google Drive
-      </a>
+<!-- ═══ CTA ═══ -->
+<section id="cta">
+  <canvas class="cta-canvas" id="cta-canvas"></canvas>
+  <div class="cta-inner">
+    <p class="s-label" style="color:rgba(200,169,110,0.6);text-align:center;">— Begin</p>
+    <h2 class="cta-title reveal">Let's build something<br/><em>inevitable.</em></h2>
+    <p class="cta-sub reveal">Every building begins with a conversation about the land it will sit on.</p>
+    <div class="hero-btns reveal" style="justify-content:center;">
+      <button class="btn-dark" onclick="openModal()">Start the Conversation</button>
+      <a href="#site-intelligence" class="btn-ghost" style="color:rgba(248,245,239,0.7);border-color:rgba(248,245,239,0.2);">Our Intelligence</a>
     </div>
-    <div class="work-placeholder reveal">
-      <h3>Portfolio gallery coming soon</h3>
-      <p>Once you share the Google Drive link, this section will display project thumbnails pulled directly from your portfolio folders. Interior projects, residential builds, sustainable installations — all viewable here.</p>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials">
-    <div class="test-header reveal">
-      <span class="section-label">— Client Experiences</span>
-      <h2 class="section-title">Stories from the<br /><em>people we've built for.</em></h2>
-      <p class="section-body" style="margin:0 auto;">We believe the best testament to our work is the people who live and work in it. Watch their experiences — unscripted, unedited.</p>
-    </div>
-    <div class="test-grid">
-      <div class="test-card reveal reveal-delay-1">
-        <div class="video-placeholder">
-          <canvas id="vc1"></canvas>
-          <span class="play-badge">▶ Client Story</span>
-        </div>
-        <div class="test-body">
-          <div class="test-client">[ Client Name ]</div>
-          <div class="test-project">Project Type · Location</div>
-          <p class="test-note">Upload your client video to replace this placeholder. A 60–90 second unscripted video of the client in their space works best.</p>
-        </div>
-      </div>
-      <div class="test-card reveal reveal-delay-2">
-        <div class="video-placeholder">
-          <canvas id="vc2"></canvas>
-          <span class="play-badge">▶ Client Story</span>
-        </div>
-        <div class="test-body">
-          <div class="test-client">[ Client Name ]</div>
-          <div class="test-project">Project Type · Location</div>
-          <p class="test-note">Upload your client video to replace this placeholder. A 60–90 second unscripted video of the client in their space works best.</p>
-        </div>
-      </div>
-      <div class="test-card reveal reveal-delay-3">
-        <div class="video-placeholder">
-          <canvas id="vc3"></canvas>
-          <span class="play-badge">▶ Client Story</span>
-        </div>
-        <div class="test-body">
-          <div class="test-client">[ Client Name ]</div>
-          <div class="test-project">Project Type · Location</div>
-          <p class="test-note">Upload your client video to replace this placeholder. A 60–90 second unscripted video of the client in their space works best.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="cta">
-    <p class="section-label" style="color:rgba(255,255,255,.6);">— Begin</p>
-    <h2 class="cta-title reveal">Let's build something<br /><em>inevitable.</em></h2>
-    <p class="cta-sub reveal">From a single room to an entire eco-home — every great building begins with a conversation. Tell us about your project.</p>
-    <div class="hero-btns reveal">
-      <button class="btn-white" id="cta-start-btn">Start the Conversation</button>
-      <a href="#intelligence" class="btn-secondary" style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.3);">Our Services</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <canvas class="footer-canvas" id="footer-canvas"></canvas>
+  <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="logo"><span class="hi">A</span>um_bu<span class="hi">I</span>lds</div>
-        <p>AI-assisted architecture rooted in vernacular wisdom and climate intelligence. Faster, leaner, smarter.</p>
+        <div class="logo">
+          <svg height="32" viewBox="0 0 55 65" fill="none"><rect x="2" y="2" width="51" height="61" rx="3" stroke="#F8F5EF" stroke-width="2.5" fill="none"/><ellipse cx="29" cy="32" rx="17" ry="19" stroke="#F8F5EF" stroke-width="2.5" fill="none"/><line x1="19" y1="27" x2="33" y2="27" stroke="#C8A96E" stroke-width="2.5" stroke-linecap="round"/><line x1="19" y1="33.5" x2="36" y2="33.5" stroke="#C8A96E" stroke-width="2.5" stroke-linecap="round"/><path d="M20 41 Q28.5 48 38 41" stroke="#C8A96E" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
+          <span class="logo-txt"><span class="ai">A</span>um_bu<span class="ai">I</span>lds</span>
+        </div>
+        <p>AI-assisted environmental architecture. Climate-responsive. Performance-driven. Rooted in place.</p>
         <p class="footer-tagline">4× Speed · 30% Cost · 100% Climate-Responsive</p>
+        <div class="footer-social">
+          <a class="social-icon" href="#" title="Instagram">ig</a>
+          <a class="social-icon" href="#" title="LinkedIn">in</a>
+          <a class="social-icon" href="#" title="Behance">be</a>
+          <a class="social-icon" href="https://drive.google.com/drive/folders/1bhBNKak9B0dxlOwMA-Y7DW0XOSa903uQ?usp=drive_link" target="_blank" title="Portfolio Drive">dr</a>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="#intelligence">Services</a></li>
-          <li><a href="#work">Spatial Stories</a></li>
-          <li><a href="#cta">Contact Us</a></li>
-          <li><a href="#about">About Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#intelligence">Site Intelligence</a></li>
-          <li><a href="#intelligence">Generative Design</a></li>
-          <li><a href="#intelligence">Material Intelligence</a></li>
-          <li><a href="#intelligence">Turnkey Build</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:hello@aumbuilds.in">hello@aumbuilds.in</a></li>
-          <li><a href="#">Bengaluru, India</a></li>
-          <li><a href="#">Mon–Sat · 10–18h</a></li>
-          <li><a href="#" id="footer-cta-link">Begin a Project →</a></li>
-        </ul>
-      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul>
+        <li><a href="#site-intelligence">Site Intelligence</a></li>
+        <li><a href="#performance">Performance Design</a></li>
+        <li><a href="#generative">Generative Design</a></li>
+        <li><a href="#materials">Material Innovation</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#work">Spatial Stories</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Practice</h4><ul>
+        <li><a href="#about">Ar. Poorvi Dasari</a></li>
+        <li><a href="#about">Nandni Padmakumar</a></li>
+        <li><a href="#work">Our Projects</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1bhBNKak9B0dxlOwMA-Y7DW0XOSa903uQ?usp=drive_link" target="_blank">Portfolio Drive</a></li>
+        <li><a href="#" onclick="openModal();return false;">Begin a Project</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul>
+        <li><a href="mailto:office@aumbuilds.com">office@aumbuilds.com</a></li>
+        <li><a href="#">Bengaluru, Karnataka</a></li>
+        <li><a href="#">India — 560001</a></li>
+        <li><a href="#">Mon–Sat · 10:00–18:00</a></li>
+        <li><a href="#" onclick="openModal();return false;">Begin a Project →</a></li>
+      </ul></div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">© 2026 Aum Builds. All rights reserved.</p>
-      <p class="footer-aum">ॐ — As above, so below.</p>
-    </div>
-  </footer>
-
-  <!-- DEEP DIVE OVERLAYS -->
-  <div class="overlay" id="overlay-site" role="dialog" aria-modal="true" aria-label="Site Intelligence details">
-    <button class="overlay-close" id="close-site">✕ Close</button>
-    <div class="overlay-inner">
-      <span class="overlay-tag">01 — Site Intelligence</span>
-      <h2 class="overlay-title">How we read a site<br />before we <em>touch it.</em></h2>
-      <div class="overlay-stat-row">
-        <div class="overlay-stat"><div class="overlay-stat-num">28%</div><div class="overlay-stat-label">Cooling load reduction via passive design</div></div>
-        <div class="overlay-stat"><div class="overlay-stat-num">40–45%</div><div class="overlay-stat-label">Energy saving vs conventional (Super ECBC)</div></div>
-        <div class="overlay-stat"><div class="overlay-stat-num">5</div><div class="overlay-stat-label">Indian climate zones our AI models are calibrated for</div></div>
-      </div>
-      <div class="overlay-body">
-        <h3>Passive Cooling Systems</h3>
-        <p>India's climate demands that buildings breathe, not just shelter. Our site intelligence process begins by mapping the thermal envelope before design begins — orienting buildings to prevailing breezes, shading critical facades from the western sun, and using the earth's thermal mass to buffer indoor temperatures.</p>
-        <p>Core passive strategies include cross-ventilation corridors calculated by AI wind simulation, deep overhangs sized to the site's latitude, and earth-berming on west-facing walls in hot-dry zones. In warm-humid climates like coastal Karnataka, we prioritise stack ventilation and high thermal emissivity roofing materials.</p>
-        <h3>ECBC 2017 Compliance</h3>
-        <p>India's Energy Conservation Building Code 2017 mandates passive design strategies including daylight access, shading, and thermal envelope performance — and we treat ECBC as a floor, not a ceiling. Our AI simultaneously evaluates prescriptive compliance and whole-building performance simulation, often achieving Super ECBC performance (40–45% more efficient than conventional buildings) without additional cost.</p>
-        <ul>
-          <li>Building envelope trade-off optimisation — AI models hundreds of wall/window/insulation combinations</li>
-          <li>Climate zone calibration — pre-loaded with all 5 Indian climate zones: Composite, Hot &amp; Dry, Warm &amp; Humid, Moderate, and Cold</li>
-          <li>Daylight simulation — AI calculates useful daylight illuminance for every room, reducing artificial lighting loads by up to 50%</li>
-        </ul>
-        <div class="overlay-divider"></div>
-        <h3>Vastu &amp; Solar Alignment</h3>
-        <p>Vastu Shastra is a pre-scientific climate-responsive design system developed over millennia in the subcontinent. East-west orientation maximises morning light and minimises afternoon heat gain. We overlay Vastu analysis with solar path data and wind rose diagrams so every spatial decision has both scientific and traditional validation.</p>
-        <h3>What We Deliver</h3>
-        <p>A Site Intelligence Report: terrain analysis, solar path animation, wind corridor mapping, flood zone overlay, Vastu axis study, and ECBC compliance projection — delivered before design begins.</p>
-      </div>
+      <p class="footer-copy">© 2026 Aum_buIlds. All rights reserved.</p>
+      <p class="footer-aum">ॐ — Listening to the Land.</p>
     </div>
   </div>
+</footer>
 
-  <div class="overlay" id="overlay-generative" role="dialog" aria-modal="true" aria-label="Generative Design details">
-    <button class="overlay-close" id="close-generative">✕ Close</button>
-    <div class="overlay-inner">
-      <span class="overlay-tag">02 — Generative Design</span>
-      <h2 class="overlay-title">How we generate <em>the right form.</em></h2>
-      <div class="overlay-stat-row">
-        <div class="overlay-stat"><div class="overlay-stat-num">4×</div><div class="overlay-stat-label">Faster than conventional design timelines</div></div>
-        <div class="overlay-stat"><div class="overlay-stat-num">100+</div><div class="overlay-stat-label">Configurations explored before selection</div></div>
-        <div class="overlay-stat"><div class="overlay-stat-num">30%</div><div class="overlay-stat-label">Cost reduction vs traditional design-build</div></div>
+<!-- MODAL -->
+<div class="modal" id="project-modal">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal()">✕ Close</button>
+    <h2 class="modal-title">Begin a <em>Project</em></h2>
+    <p class="modal-sub">Tell us about your site. We only ask what we genuinely need to start listening to it.</p>
+    <div id="form-body">
+      <!-- Step indicators -->
+      <div class="brief-steps-nav">
+        <span class="brief-step-indicator active" id="ind-1">01. CONTEXT</span>
+        <span class="brief-step-indicator" id="ind-2">02. PARAMETERS</span>
+        <span class="brief-step-indicator" id="ind-3">03. CONNECTION</span>
       </div>
-      <div class="overlay-body">
-        <h3>AI-Assisted Massing and Spatial Configuration</h3>
-        <p>Traditional architecture produces 3–5 design options before presenting to a client. We generate hundreds. Using parametric modelling and AI-driven form-finding, our system explores the full range of spatial configurations that satisfy a site's constraints simultaneously.</p>
-        <p>Each generated configuration is automatically evaluated against passive performance metrics: daylighting adequacy, cross-ventilation potential, solar shading, and ECBC envelope benchmarks. Only the top-performing forms are surfaced for human review.</p>
-        <h3>Vernacular Intelligence</h3>
-        <p>India has thousands of years of climate-responsive building tradition. Our AI models are trained on vernacular typologies — the courtyard house of Rajasthan, the sloped roofs of Kerala, the thick-walled adobe of the Deccan plateau — as well as contemporary performance data.</p>
-        <ul>
-          <li>Courtyard proportioning for natural ventilation and thermal buffering</li>
-          <li>Roof geometry optimised for rainwater harvesting and solar shading</li>
-          <li>Section design for stack ventilation in warm-humid climates</li>
-          <li>Thick-wall construction logic for hot-dry zones — walls as thermal batteries</li>
-        </ul>
-        <div class="overlay-divider"></div>
-        <h3>From Concept to Construction Documents at 4× Speed</h3>
-        <p>The 4× speed advantage comes from AI handling the computational work that used to require weeks of manual drafting: structural coordination, documentation, quantity take-offs, and code compliance checking.</p>
-      </div>
-    </div>
-  </div>
+      <div class="brief-progress-bar"><div class="brief-progress-fill" id="brief-progress-fill"></div></div>
 
-  <div class="overlay" id="overlay-material" role="dialog" aria-modal="true" aria-label="Material Intelligence details">
-    <button class="overlay-close" id="close-material">✕ Close</button>
-    <div class="overlay-inner">
-      <span class="overlay-tag">03 — Material Intelligence</span>
-      <h2 class="overlay-title">How we choose materials<br />that are <em>rooted in place.</em></h2>
-      <div class="overlay-stat-row">
-        <div class="overlay-stat"><div class="overlay-stat-num">50%</div><div class="overlay-stat-label">Less embodied carbon vs conventional spec</div></div>
-        <div class="overlay-stat"><div class="overlay-stat-num">Local</div><div class="overlay-stat-label">Materials sourced within 200km wherever possible</div></div>
-        <div class="overlay-stat"><div class="overlay-stat-num">GRIHA</div><div class="overlay-stat-label">India's national green rating system — we design to it</div></div>
-      </div>
-      <div class="overlay-body">
-        <h3>The Problem with Conventional Material Specification</h3>
-        <p>Most architects specify materials by habit, brand familiarity, or catalogue — without analysing thermal performance, embodied carbon, local availability, or regional tradition. The result is buildings that perform poorly for the climate and sever the connection to their landscape.</p>
-        <h3>AI-Driven Material Cross-Reference</h3>
-        <p>Our material intelligence system simultaneously evaluates four dimensions for every specification decision: thermal performance, embodied carbon, local sourcing potential (within 200km), and vernacular precedent.</p>
-        <ul>
-          <li><strong>Rammed earth and compressed earth blocks</strong> — thermal mass, zero embodied carbon, locally sourceable across most of India</li>
-          <li><strong>AAC blocks and fly ash bricks</strong> — lightweight, good insulation, made from industrial waste</li>
-          <li><strong>uPVC double-glazed windows</strong> — ECBC-compliant fenestration with high thermal resistance</li>
-          <li><strong>Cool roofs</strong> — high solar reflectance membranes that reduce cooling load by up to 28%</li>
-          <li><strong>Bamboo composite</strong> — structural and finish applications with exceptional embodied carbon credentials</li>
-          <li><strong>Local stone</strong> — Kota, Kadappa, Shahabad, Cuddapah — each mapped by our AI to climate zones</li>
-        </ul>
-        <div class="overlay-divider"></div>
-        <h3>GRIHA and Embodied Carbon Compliance</h3>
-        <p>Our AI generates a GRIHA projection at the specification stage — before construction begins — so clients know their sustainability credentials before a single brick is laid. We target GRIHA 4-star as standard, with 5-star achievable on most projects.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- PROJECT ENQUIRY MODAL -->
-  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-label="Begin a project">
-    <div class="modal-card">
-      <button class="modal-close" id="modal-close-btn">✕ Close</button>
-      <h2 class="modal-title">Begin a <em>Project</em></h2>
-      <p class="modal-sub">Answer a few quick questions so we can start thinking about your brief. We only ask what we genuinely need to begin designing and budgeting for you.</p>
-      <div id="form-body">
-        <div class="form-group">
-          <label class="form-label" for="f-name">Your Name</label>
-          <input type="text" class="form-control" id="f-name" placeholder="Full name" autocomplete="name" />
-        </div>
-        <div class="form-row">
+      <div class="brief-step-panes">
+        <!-- Step 1: Context -->
+        <div class="brief-step-pane active" id="pane-1">
           <div class="form-group">
-            <label class="form-label" for="f-email">Email</label>
-            <input type="email" class="form-control" id="f-email" placeholder="you@email.com" autocomplete="email" />
+            <label class="form-label">Project Type</label>
+            <select class="form-control" name="type">
+              <option value="">Select one…</option>
+              <option>Residence — New Build</option>
+              <option>Residence — Renovation / Interior</option>
+              <option>Villa / Weekend Home</option>
+              <option>Eco-Retreat / Farm Stay</option>
+              <option>Commercial Interior</option>
+              <option>Other</option>
+            </select>
           </div>
           <div class="form-group">
-            <label class="form-label" for="f-phone">Phone (optional)</label>
-            <input type="tel" class="form-control" id="f-phone" placeholder="+91 …" autocomplete="tel" />
+            <label class="form-label">Site Location</label>
+            <input type="text" class="form-control" name="location" placeholder="City, State or GPS coordinates"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Key Spaces / Requirements</label>
+            <textarea class="form-control" name="requirements" rows="3" placeholder="e.g. 3BHK, home office, courtyard, passive cooling…"></textarea>
+          </div>
+          <div class="brief-step-footer">
+            <div></div> <!-- Spacer -->
+            <button class="brief-next-btn" onclick="nextStep(2)">Next Step →</button>
           </div>
         </div>
-        <div class="form-group">
-          <label class="form-label" for="f-type">Project Type</label>
-          <select class="form-control" id="f-type">
-            <option value="">Select one…</option>
-            <option>Residence — New Build</option>
-            <option>Residence — Renovation / Interior</option>
-            <option>Villa / Weekend Home</option>
-            <option>Eco-Retreat / Farm Stay</option>
-            <option>Commercial Interior</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-row">
+
+        <!-- Step 2: Parameters -->
+        <div class="brief-step-pane" id="pane-2">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Family / Occupant Size</label>
+              <select class="form-control" name="family">
+                <option value="">Select…</option>
+                <option>Individual</option>
+                <option>Couple (2)</option>
+                <option>Small Family (3–4)</option>
+                <option>Large Family (5+)</option>
+                <option>Commercial Use</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Budget (₹)</label>
+              <select class="form-control" name="budget">
+                <option value="">Select range…</option>
+                <option>Under ₹25L</option>
+                <option>₹25L – ₹50L</option>
+                <option>₹50L – ₹1Cr</option>
+                <option>₹1Cr – ₹3Cr</option>
+                <option>₹3Cr+</option>
+              </select>
+            </div>
+          </div>
           <div class="form-group">
-            <label class="form-label" for="f-family">Family / Occupant Size</label>
-            <select class="form-control" id="f-family">
+            <label class="form-label">Sustainability Priority</label>
+            <select class="form-control" name="sustain">
               <option value="">Select…</option>
-              <option>Individual</option>
-              <option>Couple (2)</option>
-              <option>Small Family (3–4)</option>
-              <option>Large Family (5+)</option>
-              <option>Commercial Use</option>
+              <option>Essential — high-performance green building</option>
+              <option>Important — sustainable where practical</option>
+              <option>Interested — open to possibilities</option>
+              <option>Not a priority right now</option>
             </select>
           </div>
+          <div class="brief-step-footer">
+            <button class="brief-prev-btn" onclick="nextStep(1)">← Back</button>
+            <button class="brief-next-btn" onclick="nextStep(3)">Next Step →</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Connection -->
+        <div class="brief-step-pane" id="pane-3">
           <div class="form-group">
-            <label class="form-label" for="f-budget">Approx. Budget (₹)</label>
-            <select class="form-control" id="f-budget">
-              <option value="">Select range…</option>
-              <option>Under ₹25L</option>
-              <option>₹25L – ₹50L</option>
-              <option>₹50L – ₹1Cr</option>
-              <option>₹1Cr – ₹3Cr</option>
-              <option>₹3Cr+</option>
-            </select>
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Full name"/>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" placeholder="you@email.com"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone (optional)</label>
+              <input type="tel" class="form-control" name="phone" placeholder="+91 …"/>
+            </div>
+          </div>
+          <div class="brief-step-footer">
+            <button class="brief-prev-btn" onclick="nextStep(2)">← Back</button>
+            <button class="form-submit" onclick="submitForm()">Send to office@aumbuilds.com →</button>
           </div>
         </div>
-        <div class="form-group">
-          <label class="form-label" for="f-sustain">Sustainability Priority</label>
-          <select class="form-control" id="f-sustain">
-            <option value="">Select…</option>
-            <option>Essential — I want a high-performance green building</option>
-            <option>Important — I want sustainable features where practical</option>
-            <option>Interested — open to learning what's possible</option>
-            <option>Not a priority right now</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="f-req">Key Requirements / Spaces Needed</label>
-          <textarea class="form-control" id="f-req" rows="3" placeholder="e.g. 3BHK, home office, courtyard, studio apartment, passive cooling important…" style="resize:vertical;"></textarea>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="f-location">Site Location (City / State)</label>
-          <input type="text" class="form-control" id="f-location" placeholder="e.g. Bengaluru, Karnataka" />
-        </div>
-        <button class="form-submit" id="form-submit-btn">Send Project Brief →</button>
-      </div>
-      <div class="form-success" id="form-success">
-        <h3>Thank you! 🙏</h3>
-        <p>We've received your brief and will be in touch within 24 hours to schedule a first conversation.</p>
       </div>
     </div>
+    <div class="form-success" id="form-success">
+      <h3>Thank you. 🙏</h3>
+      <p>We've received your brief. Our team will be in touch within 24 hours to begin listening to your site.</p>
+    </div>
   </div>
+</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

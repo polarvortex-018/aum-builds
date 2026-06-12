@@ -1,0 +1,35 @@
+{
+  "name": "aum-builds",
+  "version": "1.0.0",
+  "description": "AI-Assisted Architecture landing site for [aumbuilds.in](https://aumbuilds.in)",
+  "main": "script.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polarvortex-018/aum-builds.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polarvortex-018/aum-builds/issues"
+  },
+  "homepage": "https://github.com/polarvortex-018/aum-builds#readme",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^1.17.0",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "@types/react": "^19.2.17",
+    "next": "^16.2.9",
+    "typescript": "^6.0.3"
+  }
+}
